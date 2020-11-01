@@ -1,5 +1,5 @@
-const Database = require('./db')
-const saveOrphanage = require('./saveOrphanage')
+const Database = require('./db');
+const saveOrphanage = require('./saveOrphanage');
 
 
 Database.then(async db => {
@@ -7,7 +7,7 @@ Database.then(async db => {
     await saveOrphanage(db, {
         lat: "-27.222633",
         lng: "-49.6555874",
-        name: "Lar dos meninos",
+        name: "Lar das meninas",
         about: "Presta assistência a crianças de 6 a 15 anos em situação de risco e/ou vulnerabilidade social.",
         whatsapp: "44478846",
         images: [
@@ -24,7 +24,7 @@ Database.then(async db => {
     const selectedOrphanages = await db.all("SELECT * FROM orphanages")
     console.log(selectedOrphanages)
     
-    const orphanage = await db.all('SELECT * FROM orphanages WHERE id = "3"')
+    const orphanage = await db.all('SELECT * FROM orphanages WHERE id = "2"')
     console.log(orphanage)
 
     // console.log(await db.run('DELETE FROM orphanages WHERE id = "4"'))

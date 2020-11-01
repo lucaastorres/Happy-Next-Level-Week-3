@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lar das Meninas | Happy</title>
+    <title>{{ orphanage.name }} | Happy</title>
 
     <link
       rel="stylesheet"
@@ -76,9 +76,11 @@
           </div>
 
           <div class="orphanage-details-content">
-            <h1>Lar das meninas</h1>
+          <h1>{{ orphanage.name }}</h1>
 
             <p>
+
+              {{ orphanage.images }}
               Presta assistência a crianças de 6 a 15 anos em situação de risco
               e/ou vulnerabilidade social.
             </p>
